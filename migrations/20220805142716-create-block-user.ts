@@ -2,7 +2,7 @@
 import { DataTypes as Sequelize, QueryInterface } from "sequelize";
 module.exports = {
   up: async (queryInterface: QueryInterface) => {
-    queryInterface.createTable("block_user", {
+    return queryInterface.createTable("block_user", {
       // need to add
       id: {
         type: Sequelize.INTEGER,
@@ -25,6 +25,7 @@ module.exports = {
       username: {
         type: Sequelize.STRING,
         allowNull: false,
+        unique: true,
       },
       isBlocked: {
         type: Sequelize.INTEGER,

@@ -17,3 +17,28 @@ export const BlockUser = Database.define(
   },
   { freezeTableName: true }
 );
+
+export async function createBlockUserModel(
+  username: string,
+  isBlocked: number
+) {
+  try {
+    const ret = await BlockUser.create({
+      username: username,
+      isBlocked: isBlocked,
+    });
+    return ret;
+  } catch (e) {
+    return null;
+  }
+}
+
+export async function getAllBlockUserModel() {
+  try {
+    const ret = await BlockUser.findAll();
+
+    return ret;
+  } catch (e) {
+    return null;
+  }
+}

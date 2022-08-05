@@ -1,1 +1,21 @@
-[]
+[
+  {
+    "_id": "9b09bd50-61f8-4417-b2e2-b14836f990d0",
+    "colId": "7e3d6bd0-5f18-4a64-a848-8f2d12c8fa95",
+    "containerId": "b688623c-ebf5-4aed-9d07-29daa25b5192",
+    "name": "create block user",
+    "url": "{{base_url}}/block/create",
+    "method": "POST",
+    "sortNum": 20000,
+    "created": "2022-08-05T17:08:00.807Z",
+    "modified": "2022-08-05T17:09:57.704Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"username\" : \"carlos\",\n  \"isBlock\" : 0\n  \n  \n}",
+      "form": []
+    },
+    "tests": []
+  }
+]

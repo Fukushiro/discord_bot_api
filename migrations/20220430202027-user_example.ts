@@ -4,7 +4,7 @@ import { DataTypes as Sequelize, QueryInterface } from "sequelize";
 
 module.exports = {
   up: async (queryInterface: QueryInterface) => {
-    queryInterface.createTable("user_example", {
+    return queryInterface.createTable("user_example", {
       // need to add
       id: {
         type: Sequelize.INTEGER,
