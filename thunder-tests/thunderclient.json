@@ -8,12 +8,12 @@
     "method": "POST",
     "sortNum": 20000,
     "created": "2022-08-05T17:08:00.807Z",
-    "modified": "2022-08-05T17:34:56.038Z",
+    "modified": "2022-08-05T18:16:05.004Z",
     "headers": [],
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n  \"username\" : \"joao\",\n  \"isBlock\" : 1\n  \n  \n}",
+      "raw": "{\n  \"username\" : \"f\",\n  \"isBlock\" : 1\n  \n  \n}",
       "form": []
     },
     "tests": []
