@@ -9,9 +9,14 @@ if (process.env.ENV === "DEV") {
   Database = new Sequelize(configuration);
 } else if (process.env.ENV === "PROD") {
   if (process.env.DATABASE_URL != undefined) {
-    Database = new Sequelize(process.env.DATABASE_URL, {
+    Database = new Sequelize(String(process.env.DATABASE_URL), {
       dialect: "postgres",
-      ssl: false,
+      dialectOptions: {
+        ssl: {
+          require: true,
+          rejectUnauthorized: false,
+        },
+      },
     });
   }
 }
