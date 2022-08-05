@@ -8,12 +8,45 @@
     "method": "POST",
     "sortNum": 20000,
     "created": "2022-08-05T17:08:00.807Z",
-    "modified": "2022-08-05T17:09:57.704Z",
+    "modified": "2022-08-05T17:34:56.038Z",
     "headers": [],
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n  \"username\" : \"carlos\",\n  \"isBlock\" : 0\n  \n  \n}",
+      "raw": "{\n  \"username\" : \"joao\",\n  \"isBlock\" : 1\n  \n  \n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "263d6d82-84c3-4769-8d7d-7e71e5dd960a",
+    "colId": "7e3d6bd0-5f18-4a64-a848-8f2d12c8fa95",
+    "containerId": "b688623c-ebf5-4aed-9d07-29daa25b5192",
+    "name": "get all block users",
+    "url": "{{base_url}}/block/get/all",
+    "method": "GET",
+    "sortNum": 30000,
+    "created": "2022-08-05T17:34:23.203Z",
+    "modified": "2022-08-05T17:34:41.014Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "816ac2ee-07fe-4b21-bfaa-90256b8e5747",
+    "colId": "7e3d6bd0-5f18-4a64-a848-8f2d12c8fa95",
+    "containerId": "b688623c-ebf5-4aed-9d07-29daa25b5192",
+    "name": "block user",
+    "url": "{{base_url}}/block/block",
+    "method": "PUT",
+    "sortNum": 40000,
+    "created": "2022-08-05T17:54:01.426Z",
+    "modified": "2022-08-05T18:06:00.738Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"username\" : \"carlos\",\n  \"isBlocked\" : 1\n}",
       "form": []
     },
     "tests": []

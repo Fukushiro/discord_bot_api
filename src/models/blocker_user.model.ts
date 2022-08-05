@@ -42,3 +42,39 @@ export async function getAllBlockUserModel() {
     return null;
   }
 }
+
+export async function getBlockUserByUsernameModel(username: string) {
+  try {
+    const ret = await BlockUser.findOne({ where: { username: username } });
+
+    return ret;
+  } catch (e) {
+    return null;
+  }
+}
+
+export async function updateBlockUserByIdModel(
+  id: number,
+  { username, isBlock }: { username?: string; isBlock?: number }
+) {
+  try {
+    if (username) {
+      await BlockUser.update(
+        {
+          username: username,
+        },
+        {
+          where: {
+            id: id,
+          },
+        }
+      );
+    }
+    if (isBlock || isBlock === 0) {
+      await BlockUser.update({ isBlocked: isBlock }, { where: { id: id } });
+    }
+    return true;
+  } catch (e) {
+    return false;
+  }
+}
