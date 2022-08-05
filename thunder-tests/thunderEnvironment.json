@@ -1,0 +1,16 @@
+[
+  {
+    "_id": "f7e47a34-5466-4fe3-8c66-eaec2398be02",
+    "name": "local",
+    "default": true,
+    "sortNum": 10000,
+    "created": "2022-08-05T14:23:46.894Z",
+    "modified": "2022-08-05T14:24:02.336Z",
+    "data": [
+      {
+        "name": "base_url",
+        "value": "http://localhost:8000"
+      }
+    ]
+  }
+]
