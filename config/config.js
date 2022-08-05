@@ -7,6 +7,6 @@ module.exports = {
   },
   production: {
     dialect: "postgres",
-    storage: process.env.DATABASE_URL,
+    URL: process.env.DATABASE_URL,
   },
 };
