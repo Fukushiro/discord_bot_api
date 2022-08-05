@@ -39,6 +39,8 @@ export async function getAllBlockUserModel() {
 
     return ret;
   } catch (e) {
+    console.log(e);
+
     return null;
   }
 }
