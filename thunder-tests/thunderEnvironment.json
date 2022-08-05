@@ -2,7 +2,7 @@
   {
     "_id": "f7e47a34-5466-4fe3-8c66-eaec2398be02",
     "name": "local",
-    "default": true,
+    "default": false,
     "sortNum": 10000,
     "created": "2022-08-05T14:23:46.894Z",
     "modified": "2022-08-05T14:24:02.336Z",
@@ -10,6 +10,20 @@
       {
         "name": "base_url",
         "value": "http://localhost:8000"
+      }
+    ]
+  },
+  {
+    "_id": "afed08fd-503e-4a1d-b4fd-3f53debda94f",
+    "name": "prod",
+    "default": true,
+    "sortNum": 20000,
+    "created": "2022-08-05T18:49:01.777Z",
+    "modified": "2022-08-05T18:49:11.895Z",
+    "data": [
+      {
+        "name": "base_url",
+        "value": "https://discord-bot-api123.herokuapp.com"
       }
     ]
   }
