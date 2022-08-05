@@ -8,10 +8,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node dist/src/index.js",
     "dev": "concurrently \"tsc --watch\" \"nodemon -q dist/src/index.js\"",
-    "createDb:dev": "sequelize db:create --env development",
-    "migrateDb:dev": "sequelize db:migrate --env development",
-    "createDb:prod": "sequelize db:create --env production",
-    "migrateDb:prod": "sequelize db:migrate --env production",
+    "createDb:dev": "sequelize-cli db:create --env development",
+    "migrateDb:dev": "sequelize-cli db:migrate --env development",
+    "createDb:prod": "sequelize-cli db:create --env production",
+    "migrateDb:prod": "sequelize-cli db:migrate --env production",
     "seq": "sequelize"
   },
   "keywords": [],
@@ -26,6 +26,7 @@
     "pg": "^8.7.3",
     "pg-hstore": "^2.3.4",
     "sequelize": "^6.13.0",
+    "sequelize-cli": "^6.4.1",
     "sqlite3": "^5.0.2"
   },
   "devDependencies": {
