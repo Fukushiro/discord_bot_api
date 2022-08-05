@@ -13,6 +13,6 @@ app.use(cors({ origin: "*" }));
 app.use(express.json());
 app.get("/", (req, res) => res.send("Express + TypeScript Server"));
 routes(app);
-app.listen(PORT, () => {
+app.listen(process.env.PORT || PORT, () => {
   console.log(`⚡️[server]: Server is running at http://localhost:${PORT}`);
 });
