@@ -11,7 +11,7 @@ if (process.env.ENV === "DEV") {
   if (process.env.DATABASE_URL != undefined) {
     Database = new Sequelize(process.env.DATABASE_URL, {
       dialect: "postgres",
-      ssl: true,
+      ssl: false,
     });
   }
 }
