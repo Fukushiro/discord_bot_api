@@ -8,12 +8,12 @@
     "method": "POST",
     "sortNum": 20000,
     "created": "2022-08-05T17:08:00.807Z",
-    "modified": "2022-08-05T18:16:05.004Z",
+    "modified": "2022-08-05T21:29:54.963Z",
     "headers": [],
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n  \"username\" : \"f\",\n  \"isBlock\" : 1\n  \n  \n}",
+      "raw": "{\n  \"username\" : \"h1\",\n  \"isBlock\" : 0\n  \n  \n}",
       "form": []
     },
     "tests": []
@@ -41,12 +41,12 @@
     "method": "PUT",
     "sortNum": 40000,
     "created": "2022-08-05T17:54:01.426Z",
-    "modified": "2022-08-05T18:06:00.738Z",
+    "modified": "2022-08-06T00:53:32.923Z",
     "headers": [],
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n  \"username\" : \"carlos\",\n  \"isBlocked\" : 1\n}",
+      "raw": "{\n  \"username\" : \"@dasda\",\n  \"isBlocked\" : 1\n}",
       "form": []
     },
     "tests": []

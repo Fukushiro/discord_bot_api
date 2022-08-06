@@ -12,6 +12,14 @@ if (process.env.ENV === "DEV") {
 }
 else if (process.env.ENV === "PROD") {
     if (process.env.DATABASE_URL != undefined) {
-        exports.Database = Database = new sequelize_1.Sequelize(process.env.DATABASE_URL);
+        exports.Database = Database = new sequelize_1.Sequelize(String(process.env.DATABASE_URL), {
+            dialect: "postgres",
+            dialectOptions: {
+                ssl: {
+                    require: true,
+                    rejectUnauthorized: false,
+                },
+            },
+        });
     }
 }

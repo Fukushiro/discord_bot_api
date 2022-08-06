@@ -43,6 +43,7 @@ function getAllBlockUserController(req, res, next) {
 exports.getAllBlockUserController = getAllBlockUserController;
 function blockUserController(req, res, next) {
     return __awaiter(this, void 0, void 0, function* () {
+        console.log(req.body);
         if (!(0, _1.checkNull)([req.body.username, req.body.isBlocked])) {
             return res
                 .status(400)
